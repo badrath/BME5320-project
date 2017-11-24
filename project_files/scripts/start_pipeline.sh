@@ -11,8 +11,8 @@ file="../data/uncompressed_input_file.faa"
 
 #*******************************
 #uncomment for production:
-#echo "[INFO] wget -P $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz"
-#wget -O $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
+echo "[INFO] wget -P $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz"
+wget -O $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
 #*******************************
 
 if [ ! -d "../data" ]; then
@@ -63,3 +63,4 @@ fi
 #checkpoint, test run the python code with the unix run:
 #THEN, create an array job for neon blast
 #	dev and test on a subset (2 files) 
+#	see hw06 .job and pt3 .sh

@@ -1,0 +1,18 @@
+#!/bin/sh
+##
+#$ -S /bin/bash
+#$ -cwd
+#$ -N BME5320_project_testing
+#$ -o $JOB_NAME.log
+#$ -e $JOB_NAME.err
+#$ -M robert-marini@uiowa.edu
+#$ -m bes
+#$ -q DK
+#$ -pe smp 4 #2
+
+CMD='./BME5320_hw06_RobertMarini_pt3.sh'
+echo "commands=$CMD"
+$CMD
+echo "****************"
+date
+#########################################
