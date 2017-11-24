@@ -9,9 +9,11 @@ module load python/3.3
 compressed_file="../data/compressed_input_file.faa.gz"
 file="../data/uncompressed_input_file.faa"
 
-#wget -O $compressed_file $1
-echo "[INFO] wget -P $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz"
-wget -O $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
+#*******************************
+#uncomment for production:
+#echo "[INFO] wget -P $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz"
+#wget -O $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
+#*******************************
 
 if [ ! -d "../data" ]; then
 	mkdir "../data"
@@ -48,16 +50,16 @@ if [ ! -d "../data/faa-split" ]; then
 fi
 
 echo "[INFO] Creating files by running auxillary python script."
-echo "[INFO] It is assumed that the python file is in the current working directory"
-python split_faa.py $file $num_of_files $num_of_seqs #5 seqences into each of the 103 files, it
+echo "[INFO] It is assumed that the python file is in the current working directory."
+split_status=0
+python split_faa.py $file $num_of_files $num_of_seqs > $split_status #5 seqences into each of the 103 files, it
 
-echo "[INFO] Files created."
+if (($split_status > 0)); then
+	exit 1
+else
+	echo "[INFO] File split successful."
+fi
 
-#checkpoint, most recent result:
-#[INFO] Found best prime factors to split input file into: 5 sequences per file of 103 files.
-#[INFO] Creating files by running auxillary python script.
-#[INFO] It is assumed that the python file is in the current working directory
-#['split_faa.py', '../data/uncompressed_input_file.faa', '103', '5']
-#[INFO] py script ran as it should
-#[INFO] Files created.
-#[rmarini@neon-login-0-1 scripts]$
+#checkpoint, test run the python code with the unix run:
+#THEN, create an array job for neon blast
+#	dev and test on a subset (2 files) 
