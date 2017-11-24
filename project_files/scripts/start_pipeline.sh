@@ -62,7 +62,7 @@ fi
 
 #	actual qsub here, untested
 #qsub -t 0-num_of_files:1 submit_blast_array.job
-qsub -t 0-2:1 submit_blast_array.job	#for dev only
+qsub -t 1-2:1 submit_blast_array.job	#for dev only
 
 
 
