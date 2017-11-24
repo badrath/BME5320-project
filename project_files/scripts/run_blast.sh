@@ -9,7 +9,7 @@ DB='/Shared/class-BME5320-dkristensen/database/refseq_protein'
 
 QUERY_FILE=$1
 
-OUTPUT_FILE="$1.faa" #	suspect and untested
+OUTPUT_FILE="$1.out" #	suspect and untested
 
 NUM_ALIGNMENTS_DESCR=500
 
