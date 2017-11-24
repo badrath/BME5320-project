@@ -10,8 +10,8 @@
 #$ -q DK
 #$ -pe smp 4 #2
 
-CMD='./BME5320_hw06_RobertMarini_pt3.sh'
-echo "commands=$CMD"
+CMD='./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa'
+echo "commands=$CMD ../data/faa-split/file$SGE_TASK_ID.faa"
 $CMD
 echo "****************"
 date

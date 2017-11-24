@@ -60,7 +60,19 @@ else
 	echo "[INFO] File split successful."
 fi
 
-#checkpoint, test run the python code with the unix run:
-#THEN, create an array job for neon blast
-#	dev and test on a subset (2 files) 
-#	see hw06 .job and pt3 .sh
+#	actual qsub here, untested
+#qsub -t 0-num_of_files:1 submit_blast_array.job
+qsub -t 0-2:1 submit_blast_array.job	#for dev only
+
+
+
+
+
+
+
+
+
+
+
+
+
