@@ -3,7 +3,7 @@
 #	project
 #	runs blastp with the given input faa file
 
-BLASTP='/Shared/class-BME5320-dkristensen/database/refseq_protein'
+BLASTP='/Shared/class-BME5320-dkristensen/bin/blastp'
 
 DB='/Shared/class-BME5320-dkristensen/database/refseq_protein'
 
