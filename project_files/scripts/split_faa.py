@@ -18,7 +18,7 @@ pwd1 = os.getcwd();
 grand_parent_dir = os.path.split(pwd1)[0];
 buffer = [];
 seqs_num = 0;
-filename_i = 0;
+filename_i = 1; #for job submission the file series cannot begin at 0
 writing_records = [];
 with open (faa_path, 'r') as infile:
     for line in infile:
