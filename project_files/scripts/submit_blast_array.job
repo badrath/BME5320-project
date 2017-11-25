@@ -12,7 +12,9 @@
 
 CMD='./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa'
 echo "commands=$CMD ../data/faa-split/file$SGE_TASK_ID.faa"
-$CMD
+./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa
+
+
 echo "****************"
 date
 #########################################
