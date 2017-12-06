@@ -2,7 +2,7 @@
 ##
 #$ -S /bin/bash
 #$ -cwd
-#$ -N BME5320_project_testing
+#$ -N BME5320_blast_array
 #$ -o $JOB_NAME.log
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu

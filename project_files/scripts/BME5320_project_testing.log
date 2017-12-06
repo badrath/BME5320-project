@@ -1,0 +1,6 @@
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file2.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file1.faa
+****************
+Fri Nov 24 19:10:07 CST 2017
+****************
+Fri Nov 24 19:22:59 CST 2017

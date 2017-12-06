@@ -1,15 +1,17 @@
 #	BME5320
 #	Robert Marini
 #	project
-#	runs blastp with the given input faa file
+#	filters and runs blastdbcmd with the given input blast -fmt 7 output file (...faa.out)
 
-BLASTP='/Shared/class-BME5320-dkristensen/bin/blastp'
+BLASTDBCMD='/Shared/class-BME5320-dkristensen/bin/blastdbcmd'
 
 DB='/Shared/class-BME5320-dkristensen/database/refseq_protein'
 
-QUERY_FILE=$1
+DBTYPE='prot'
 
-OUTPUT_FILE="$1.out" #	suspect and untested
+BATCH_FILE=$1
+
+OUTPUT_FILE="$1.GO.out" #	suspect and untested
 
 NUM_ALIGNMENTS_DESCR=500
 
@@ -20,4 +22,4 @@ E_VALUE=0.001
 
 #$BLASTP -query $QUERY_FILE -out $OUTPUT_FILE -db $DB -num_alignments $NUM_ALIGNMENTS_DESCR -num_descriptions $NUM_ALIGNMENTS_DESCR -outfmt $TAB_FORMAT
 
-$BLASTP -query $QUERY_FILE -out $OUTPUT_FILE -db $DB -max_target_seqs $NUM_ALIGNMENTS_DESCR -outfmt $TAB_FORMAT -evalue $E_VALUE
+$BLASTDBCMD -db $DB -dbtype $DBTYPE -entry_batch BATCH_FILE

@@ -60,9 +60,24 @@ else
 	echo "[INFO] File split successful."
 fi
 
-#	actual qsub here, untested
-#qsub -t 0-num_of_files:1 submit_blast_array.job
-qsub -t 1-2:1 submit_blast_array.job	#for dev only
+#	actual qsub here
+#hold_blast_jid=$(qsub -terse -t 0-num_of_files:1 submit_blast_array.job)
+hold_blast_jid=$(qsub -terse -t 1-2:1 submit_blast_array.job | awk -F. '{print $1}')	#for dev only
+
+#got blast results
+#TODO waiting to qsub for another qsub to finish
+hold_blastdbcmd_jid=$(qsub -hold_jid $hold_blast_jid submit_blastdbcmd.job | awk -F. '{print $1}') #incomplete
+
+#TODO	run a qsub with a flag to wait for previous qsub (see Neon documentation). Use this qsub to filter further, then run blastdbcmd
+#TODO 		check each file for '#' comment line to verify complete run, then filter based on: alignment length (use a ratio of query to target), evalue = 0, and %id
+#TODO 		get GO Terms
+
+#got got GO Terms
+#TODO wait for the blastdbcmd's to finish then amalagmate them
+qsub -hold_jid $hold_blastdbcmd_jid amalgamateGOTerms.job #not written
+#TODO run a qsub to put together the GO Terms results into the final report
+#TODO 	filter for unique GO Terms for each query sequence
+
 
 
 
