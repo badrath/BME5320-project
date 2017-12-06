@@ -1,0 +1,11 @@
+1) draw out how I want to filter, then split out the query sequence results, then batch run them
+	a) finding GO options:
+		1) python script that runs qsubs of system commands
+		2) python to split results into a batch file for each query sequence in a batch4GO directory within the data directory, 
+			return the # of files created, 
+			finally, create an array job that runs through running blastdbcmd on each of the resultant batch files,
+	b) amalgamating GO returns
+		1) go through each file retaining only the unique GO terms.
+		2) concatenate these into a single line, for each query sequence
+		3) go through the files from 1 to max, appending each line to a final output file.
+			 
