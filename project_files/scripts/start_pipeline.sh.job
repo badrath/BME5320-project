@@ -28,9 +28,11 @@ echo "[INFO] wget -P $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF
 wget -O $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
 #*******************************
 
-if [ ! -d "../data" ]; then
-	mkdir "../data"
+data_dir="../data"
+if [ -d $data_dir ]; then
+	rm -rf $data_dir
 fi
+mkdir $data_dir
 
 gunzip -c $compressed_file > $file #the result is the uncompressed_input_file.faa
 

@@ -23,4 +23,5 @@ output_dir = os.path.join(grand_parent_dir,output_dir); #got the paths localized
 for filename in os.listdir(input_dir):
     if filename.endswith(".out"):
         #    only looking at the blast output files here
-        completion_line = subprocess.check_output(['tail','-1',filename])
+        completion_line = subprocess.check_output(['tail','-1',filename]);
+        
