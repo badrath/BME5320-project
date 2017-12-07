@@ -1,3 +1,4 @@
-/Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file1.faa
-[ERROR] incorrect number of files, maybe a sequence got chopped up or skipped.
-2
+/Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file103.faa
+[INFO] ../data/uncompressed_input_file.faa split into 103 files of 5 sequences each. 
+	Placed in following directory: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split
+0

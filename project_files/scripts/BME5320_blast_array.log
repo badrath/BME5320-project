@@ -4,3 +4,11 @@ commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split
 Thu Dec  7 14:16:29 CST 2017
 ****************
 Thu Dec  7 14:16:30 CST 2017
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file2.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file1.faa
+****************
+Thu Dec  7 14:50:18 CST 2017
+****************
+Thu Dec  7 14:50:19 CST 2017
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file1.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file2.faa
