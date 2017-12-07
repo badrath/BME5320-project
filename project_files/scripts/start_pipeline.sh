@@ -1,15 +1,4 @@
-##
-#$ -S /bin/bash
-#$ -cwd
-#$ -N BME5320_RobertMarini_Annotation_Pipeline
-#$ -o $JOB_NAME.log
-#$ -e $JOB_NAME.err
-#$ -M robert-marini@uiowa.edu
-#$ -m bes
-#$ -q DK
-#$ -pe smp 2 #2
-
-#	This file may be run on the login server, or qsubbed itself (due to the lines above)
+#	This file may be run on the login node
 
 #~/Documents/SKOOL/Informatics/Fall2017\ Classes/BME_Bioinformatics\ Techniques/final\ project
 #~/BME5320/project/project_files/scripts/get-split-MGG-genome.sh

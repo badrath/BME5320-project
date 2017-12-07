@@ -1,6 +1,0 @@
-[INFO] wget -P ../data/compressed_input_file.faa.gz ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
-[INFO] Found best prime factors to split input file into: 0 sequences per file of 2 files.
-[INFO] Creating files by running auxillary python script.
-[INFO] It is assumed that the python file is in the current working directory.
-[INFO] File split successful.
-[INFO] Running blast array job.
