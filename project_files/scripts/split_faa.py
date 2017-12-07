@@ -3,7 +3,7 @@
 import os
 import sys
 
-exit_status = 0; #set to successful unless otherwise changed to due runtime failure
+exit_status = 0; #set to successful unless otherwise changed due to runtime failure
 
 input_arguments = sys.argv; #0 = file path, #1 = number of files, #2 = number of seqs per file
 

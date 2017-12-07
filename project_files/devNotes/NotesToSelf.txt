@@ -8,4 +8,7 @@
 		1) go through each file retaining only the unique GO terms.
 		2) concatenate these into a single line, for each query sequence
 		3) go through the files from 1 to max, appending each line to a final output file.
-			 
+
+Notes for report:
+1)	Threshold choice based on publication: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3820096/, "E()-valus, identiy, and bits"
+2)	Paper about finding orthologs: https://link.springer.com/protocol/10.1007%2F978-1-61779-582-4_9

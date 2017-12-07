@@ -1,0 +1,28 @@
+#!/bin/sh
+##
+#$ -S /bin/bash
+#$ -cwd
+#$ -N BME5320_filter_split_blastdbcmd_array
+#$ -o $JOB_NAME.log
+#$ -e $JOB_NAME.err
+#$ -M robert-marini@uiowa.edu
+#$ -m bes
+#$ -q DK
+#$ -pe smp 2 #2
+
+#This file calls the functions to filter and split out the individual sequences of the blast results.
+#	Once these files are ready for GO Term finding, blastdbcmd will be called in an hpc array job setup.
+
+data_source_dir="../data/faa-split"
+
+#creating directory for splitting
+batch4GO_Dir="../data/batch4GO"
+if [ -d $batch4GO_Dir ]; then
+	rm -rf $batch4GO_Dir #	deletes previous batch4GO directory if it exists
+fi
+mkdir $batch4GO_Dir
+
+#filter and splitting the .faa.out files in directory, which is provided as a path to directory for the function
+python filter_split_seq.py $data_source_dir $batch4GO_Dir	#	underconstruction
+
+#TBC

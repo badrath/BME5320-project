@@ -10,6 +10,8 @@
 #$ -q DK
 #$ -pe smp 4 #2
 
+#INCOMPLETE
+
 
 #TODO filter the query file, and split out each query sequences' results
 #TODO put list of qualifying targets into a file to be batch run

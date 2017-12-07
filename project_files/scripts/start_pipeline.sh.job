@@ -1,3 +1,16 @@
+##
+#$ -S /bin/bash
+#$ -cwd
+#$ -N BME5320_RobertMarini_Annotation_Pipeline
+#$ -o $JOB_NAME.log
+#$ -e $JOB_NAME.err
+#$ -M robert-marini@uiowa.edu
+#$ -m bes
+#$ -q DK
+#$ -pe smp 2 #2
+
+#	This file may be run on the login server, or qsubbed itself (due to the lines above)
+
 #~/Documents/SKOOL/Informatics/Fall2017\ Classes/BME_Bioinformatics\ Techniques/final\ project
 #~/BME5320/project/project_files/scripts/get-split-MGG-genome.sh
 
@@ -62,21 +75,21 @@ fi
 
 #	actual qsub here
 #hold_blast_jid=$(qsub -terse -t 0-num_of_files:1 submit_blast_array.job)
+echo "[INFO] Running blast array job."
 hold_blast_jid=$(qsub -terse -t 1-2:1 submit_blast_array.job | awk -F. '{print $1}')	#for dev only
 
-#got blast results
-#TODO waiting to qsub for another qsub to finish
-hold_blastdbcmd_jid=$(qsub -hold_jid $hold_blast_jid submit_blastdbcmd.job | awk -F. '{print $1}') #incomplete
-
-#TODO	run a qsub with a flag to wait for previous qsub (see Neon documentation). Use this qsub to filter further, then run blastdbcmd
-#TODO 		check each file for '#' comment line to verify complete run, then filter based on: alignment length (use a ratio of query to target), evalue = 0, and %id
-#TODO 		get GO Terms
-
-#got got GO Terms
-#TODO wait for the blastdbcmd's to finish then amalagmate them
-qsub -hold_jid $hold_blastdbcmd_jid amalgamateGOTerms.job #not written
-#TODO run a qsub to put together the GO Terms results into the final report
-#TODO 	filter for unique GO Terms for each query sequence
+##got blast results
+#hold_blastdbcmd_jid=$(qsub -hold_jid $hold_blast_jid filter_split_blastdbcmd_array.job | awk -F. '{print $1}') #incomplete
+#
+##TODO	run a qsub with a flag to wait for previous qsub (see Neon documentation). Use this qsub to filter further, then run blastdbcmd
+##TODO 		check each file for '#' comment line to verify complete run, then filter based on: alignment length (use a ratio of query to target), evalue = 0, and %id
+##TODO 		get GO Terms
+#
+##got got GO Terms
+##TODO wait for the blastdbcmd's to finish then amalagmate them
+#qsub -hold_jid $hold_blastdbcmd_jid amalgamateGOTerms.job #not written
+##TODO run a qsub to put together the GO Terms results into the final report
+##TODO 	filter for unique GO Terms for each query sequence
 
 
 
