@@ -1,0 +1,21 @@
+--2017-12-07 14:04:24--  ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
+           => “../data/compressed_input_file.faa.gz”
+Resolving ftp.ncbi.nlm.nih.gov... 130.14.250.11, 2607:f220:41e:250::10
+Connecting to ftp.ncbi.nlm.nih.gov|130.14.250.11|:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1 ... done.
+==> SIZE GCF_000027325.1_ASM2732v1_protein.faa.gz ... 115563
+==> PASV ... done.    ==> RETR GCF_000027325.1_ASM2732v1_protein.faa.gz ... done.
+Length: 115563 (113K) (unauthoritative)
+
+     0K .......... .......... .......... .......... .......... 44%  801K 0s
+    50K .......... .......... .......... .......... .......... 88% 1.03M 0s
+   100K .......... ..                                         100%  134M=0.1s
+
+2017-12-07 14:04:26 (1.00 MB/s) - “../data/compressed_input_file.faa.gz” saved [115563]
+
+gzip: ../data/compressed_input_file.faa.gz: No such file or directory
+/opt/gridengine/default/spool/neon-compute-4-12/job_scripts/3713801: line 49: ((: < > 0: syntax error: operand expected (error token is "< > 0")
+Unable to run job: denied: host "neon-compute-4-12.local" is no submit host.
+Exiting.

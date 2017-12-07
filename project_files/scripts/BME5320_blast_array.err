@@ -1,0 +1,2 @@
+Command line argument error: Argument "query". File is not accessible:  `../data/faa-split/file2.faa'
+Warning: [blastp] Query is Empty!
