@@ -3,6 +3,7 @@
 import os
 import sys
 import subprocess
+from filter import filter
 
 exit_status = 0; #set to successful unless otherwise changed due to runtime failure
 
@@ -23,5 +24,12 @@ output_dir = os.path.join(grand_parent_dir,output_dir); #got the paths localized
 for filename in os.listdir(input_dir):
     if filename.endswith(".out"):
         #    only looking at the blast output files here
-        completion_line = subprocess.check_output(['tail','-1',filename]);
-        
+        completion_line = subprocess.check_output(['tail','-1',filename]);  #    gets last line to check for completed blast run
+        if ('#' in completion_line[0]):
+            #    blast run of the file completed successfully.
+            sys.stdout.write("[INFO] " + filename + "completed BLASTP as expected.");
+            #    filter and split
+            
+        else:
+            #    blast run of the file completed UNsuccessfully. skips this file with an error message.
+            sys.stdout.write("[ERROR] " + filename + "did not complete BLASTP as expected. \n\tExcluded file from split and GO Term finding");

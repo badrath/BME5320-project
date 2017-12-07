@@ -70,20 +70,19 @@ fi
 #	actual qsub here
 #hold_blast_jid=$(qsub -terse -t 0-num_of_files:1 submit_blast_array.job)
 echo "[INFO] Running blast array job."
-hold_blast_jid=$(qsub -terse -t 1-2:1 submit_blast_array.job | awk -F. '{print $1}')	#for dev only
+hold_blast_jid=$(qsub -terse -t 1-2:1 submit_blast_array.job | awk -F. '{print $1}')	# runs only 2 files for dev only
 
-##got blast results
-#hold_blastdbcmd_jid=$(qsub -hold_jid $hold_blast_jid filter_split_blastdbcmd_array.job | awk -F. '{print $1}') #incomplete
-#
-##TODO	run a qsub with a flag to wait for previous qsub (see Neon documentation). Use this qsub to filter further, then run blastdbcmd
-##TODO 		check each file for '#' comment line to verify complete run, then filter based on: alignment length (use a ratio of query to target), evalue = 0, and %id
-##TODO 		get GO Terms
-#
-##got got GO Terms
-##TODO wait for the blastdbcmd's to finish then amalagmate them
-#qsub -hold_jid $hold_blastdbcmd_jid amalgamateGOTerms.job #not written
-##TODO run a qsub to put together the GO Terms results into the final report
-##TODO 	filter for unique GO Terms for each query sequence
+#for blast results
+#TODO:
+hold_pyFilter_jid=$(qsub -hold_jid $hold_blastdbcmd_jid submit_filter_split_py.job | awk -F. '{print $1}') #	This will run a python script to process the blast results for the next step. incomplete
+#TODO:
+hold_blastdbcmd_jid=$(qsub -hold_jid $hold_pyFilter_jid filter_split_blastdbcmd_array.job | awk -F. '{print $1}') #This will run the blastdbcmd on all seq files in the data/batch4GO directory. not written
+
+#for GO Terms
+#TODO wait for the blastdbcmd's to finish then amalagmate them
+qsub -hold_jid $hold_blastdbcmd_jid amalgamateGOTerms.job ##	This will combine the results of the individual sequence runs into 2 files, an Annotated_seq_simple.csv and Annotated_seqes_long.csv. not written
+#TODO run a qsub to put together the GO Terms results into the final report
+#TODO 	filter for unique GO Terms for each query sequence
 
 
 

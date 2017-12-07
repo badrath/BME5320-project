@@ -2,7 +2,7 @@
 ##
 #$ -S /bin/bash
 #$ -cwd
-#$ -N BME5320_filter_split_blastdbcmd_array
+#$ -N BME5320_filter_split_py
 #$ -o $JOB_NAME.log
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu
@@ -22,7 +22,13 @@ if [ -d $batch4GO_Dir ]; then
 fi
 mkdir $batch4GO_Dir
 
-#filter and splitting the .faa.out files in directory, which is provided as a path to directory for the function
-python filter_split_seq.py $data_source_dir $batch4GO_Dir	#	underconstruction
+#	filter and splitting the .faa.out files in directory, which is provided as a path to directory for the function
+split_status=0
+python filter_split_seq.py $data_source_dir $batch4GO_Dir	 > $split_status #	underconstruction
 
-#TBC
+if (($split_status > 0)); then
+	"[ERROR] .faa.out files split successfully."
+	exit 1
+else
+echo "[INFO] .faa.out files split successfully."
+fi
