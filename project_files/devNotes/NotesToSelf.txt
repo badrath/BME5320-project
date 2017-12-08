@@ -12,3 +12,6 @@
 Notes for report:
 1)	Threshold choice based on publication: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3820096/, "E()-valus, identiy, and bits"
 2)	Paper about finding orthologs: https://link.springer.com/protocol/10.1007%2F978-1-61779-582-4_9
+
+11/7:
+1) need to rework filter_split_seq.py so that I can call blastdbcmd wiht -outfmt %a -entry '' -target_only -db '<path to ref seq>'

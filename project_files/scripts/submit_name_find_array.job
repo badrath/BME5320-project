@@ -1,0 +1,41 @@
+#!/bin/sh
+##
+#$ -S /bin/bash
+#$ -cwd
+#$ -N BME5320_filter_split_py
+#$ -o $JOB_NAME.log
+#$ -e $JOB_NAME.err
+#$ -M robert-marini@uiowa.edu
+#$ -m bes
+#$ -q DK
+#$ -pe smp 2 #2
+
+#This file calls the functions to filter and split out the individual sequences of the blast results.
+#	Once these files are ready for GO Term finding, blastdbcmd will be called in an hpc array job setup.
+
+data_source_dir="../data/faa-split"
+
+#creating directory for output of blastdbcmd
+batch4Names_Dir="../data/GONames"
+if [ -d $batch4Names_Dir ]; then
+	rm -rf $batch4Names_Dir #	deletes previous batch4Names directory if it exists, like clearing old data
+fi
+mkdir $batch4Names_Dir
+
+CMD='./filter_run_blastdbcmd.sh ../data/faa-split/file$SGE_TASK_ID.faa.out'
+echo "./filter_run_blastdbcmd.sh ../data/faa-split/file$SGE_TASK_ID.faa.out"
+./filter_run_blastdbcmd.sh ../data/faa-split/file$SGE_TASK_ID.faa.out
+
+date
+echo "*************************"
+
+##	filter and splitting the .faa.out files in directory, which is provided as a path to directory for the function
+#split_status=0
+#python filter_split_seq.py $data_source_dir $batch4Names_Dir	 > $split_status #	underconstruction
+#
+#if (($split_status > 0)); then
+#	echo "[ERROR] Annotation names not found due to some error in filteR_split_seq.py."
+#	exit 1
+#else
+#	echo "[INFO] Annotation names found successfully and placed into ../data/GONames."
+#fi

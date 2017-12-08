@@ -11,15 +11,11 @@ DBTYPE='prot'
 
 BATCH_FILE=$1
 
-OUTPUT_FILE="$1.GO.out" #	suspect and untested
+OUTPUT_FILE="$1.Names" #	suspect and untested
 
-NUM_ALIGNMENTS_DESCR=500
-
-TAB_FORMAT=7 #6 without header, 7 with header and final line for completion validation check
-
-E_VALUE=0.001
-
+OUTPUT_FORMAT="%a"
 
 #$BLASTP -query $QUERY_FILE -out $OUTPUT_FILE -db $DB -num_alignments $NUM_ALIGNMENTS_DESCR -num_descriptions $NUM_ALIGNMENTS_DESCR -outfmt $TAB_FORMAT
 
-$BLASTDBCMD -db $DB -dbtype $DBTYPE -entry_batch BATCH_FILE
+#below command is untested
+$BLASTDBCMD -db $DB -dbtype $DBTYPE -entry_batch $BATCH_FILE -out $OUTPUT_FILE -outfmt $OUTPUT_FORMAT -target_only

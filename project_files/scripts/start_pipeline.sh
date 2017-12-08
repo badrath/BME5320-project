@@ -6,8 +6,6 @@
 #meant to be run on neon
 module load python/3.3
 
-#mainly for documenting command flow and NOT a runable shell script
-
 data_dir="../data"
 if [ -d $data_dir ]; then
 	rm -rf $data_dir
@@ -23,7 +21,7 @@ echo "[INFO] wget -O $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF
 
 wget -O $compressed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
 #*******************************
-$BLASTP -query $QUERY_FILE -out $OUTPUT_FILE -db $DB -num_alignments $NUM_ALIGNMENTS_DESCR -num_descriptions $NUM_ALIGNMENTS_DESCR -outfmt $TAB_FORMAsed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
+#$BLASTP -query $QUERY_FILE -out $OUTPUT_FILE -db $DB -num_alignments $NUM_ALIGNMENTS_DESCR -num_descriptions $NUM_ALIGNMENTS_DESCR -outfmt $TAB_FORMAsed_file ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/027/325/GCF_000027325.1_ASM2732v1/GCF_000027325.1_ASM2732v1_protein.faa.gz
 
 
 gunzip -c $compressed_file > $file #the result is the uncompressed_input_file.faa
