@@ -2,7 +2,7 @@
 ##
 #$ -S /bin/bash
 #$ -cwd
-#$ -N BME5320_blast_array
+#$ -N blast_array
 #$ -o $JOB_NAME.log
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu
@@ -10,9 +10,11 @@
 #$ -q DK
 #$ -pe smp 4 #2
 
+NUM_CORES=4
+
 CMD='./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa'
 echo "commands=$CMD ../data/faa-split/file$SGE_TASK_ID.faa"
-./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa
+./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa $NUM_CORES
 
 
 echo "****************"

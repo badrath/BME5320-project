@@ -1,0 +1,6 @@
+./filter_run_blastdbcmd.sh ../data/faa-split/file1.faa.out
+Fri Dec  8 15:27:14 CST 2017
+*************************
+./filter_run_blastdbcmd.sh ../data/faa-split/file2.faa.out
+Fri Dec  8 15:27:14 CST 2017
+*************************

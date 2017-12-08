@@ -2,13 +2,13 @@
 ##
 #$ -S /bin/bash
 #$ -cwd
-#$ -N BME5320_filter_split_py
+#$ -N filter_name_find_array
 #$ -o $JOB_NAME.log
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu
 #$ -m bes
 #$ -q DK
-#$ -pe smp 2 #2
+#$ -pe smp 1 #2
 
 #This file calls the functions to filter and split out the individual sequences of the blast results.
 #	Once these files are ready for GO Term finding, blastdbcmd will be called in an hpc array job setup.
