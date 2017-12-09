@@ -68,7 +68,7 @@ fi
 #		Do I need -pe smp 4 in the qsub?....well to whatever effect it works faster than previously, I also added to use num_threads 4 in the blast program
 echo "[INFO] Running blast array job."
 #hold_blast_jid=$(qsub -pe smp 4 -terse -t 1-$num_of_files:1 submit_blast_array.job | awk -F. '{print $1}')	# runs all files, for full run only
-hold_blast_jid=$(qsub -pe smp 4 -terse -t 1-2:1 submit_blast_array.job | awk -F. '{print $1}')	# runs only 2 files for dev only
+#hold_blast_jid=$(qsub -pe smp 4 -terse -t 1-2:1 submit_blast_array.job | awk -F. '{print $1}')	# runs only 2 files for dev only, WORKS
 
 #for blast results
 #		Do I need -pe smp 1 in the qsub?

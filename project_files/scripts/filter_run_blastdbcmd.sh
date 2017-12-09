@@ -11,6 +11,7 @@ OUTPUT=($(python filter_split_seq.py $INPUT_FILE | tr -d '[],'))	#	filter_split_
 #	filter_split_seq.py will return a python array (which needs to be converted to a UNIX array, see above) of the best matched accession.version ids.
 #	each element of the array is then passed through the blastdbcmd function and the result is written to a ../data/GONames/*.Names file
 
+echo "filter_split OUTPUT";
 for i in "${OUTPUT[@]}"
 do
 	if [ ! -f "$OUTPUT_FILE" ]; then
@@ -18,6 +19,7 @@ do
 	else
 		$i >> $OUTPUT_FILE
 	fi 
+	echo $i;
 done
 
 ./run_blastdbcmd.sh $OUTPUT_FILE
