@@ -22,11 +22,11 @@ def find_filtered_matches(input_args):
     
     pwd1 = os.getcwd();
     grand_parent_dir = os.path.split(pwd1)[0];
-    input_file = os.path.join(grand_parent_dir,input_dir);   #got the paths localized
+    filename_path = os.path.join(grand_parent_dir,input_file);   #got the paths localized
     
     
     
-    filename_path = os.path.join(input_dir,filename);
+#     filename_path = os.path.join(input_dir,filename);
     #    only looking at the blast output files here
     completion_line = subprocess.check_output(['tail','-1',filename_path]);  #    gets last line to check for completed blast run
     returned_accID = [];
