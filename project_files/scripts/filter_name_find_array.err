@@ -1,2 +1,13 @@
 /opt/gridengine/default/spool/neon-compute-4-12/job_scripts/3731571: line 27: ./filter_run_blastdbcmd.sh: Permission denied
 /opt/gridengine/default/spool/neon-compute-4-12/job_scripts/3731571: line 27: ./filter_run_blastdbcmd.sh: Permission denied
+mkdir: cannot create directory `../data/GONames': File exists
+  File "filter_split_seq.py", line 52
+    return(returned_accID);
+    ^
+SyntaxError: 'return' outside function
+  File "filter_split_seq.py", line 52
+    return(returned_accID);
+    ^
+SyntaxError: 'return' outside function
+Command line argument error: Argument "entry_batch". File is not accessible:  `../data/faa-split/file1.faa.out.Matches'
+Command line argument error: Argument "entry_batch". File is not accessible:  `../data/faa-split/file2.faa.out.Matches'
