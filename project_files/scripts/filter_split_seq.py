@@ -23,12 +23,10 @@ def find_filtered_matches(input_args):
     pwd1 = os.getcwd();
     grand_parent_dir = os.path.split(pwd1)[0];
     filename_path = os.path.join(grand_parent_dir,input_file);   #got the paths localized
+    print("filename_path from filter_split_seq.py: " + filename_path);
     
-    
-    
-#     filename_path = os.path.join(input_dir,filename);
-    #    only looking at the blast output files here
     completion_line = subprocess.check_output(['tail','-1',filename_path]);  #    gets last line to check for completed blast run
+    print("completion_line from filter_split_seq.py: " + completion_line);
     returned_accID = [];
     if ('#' in completion_line[0]):
         #    blast run of the file completed successfully.
