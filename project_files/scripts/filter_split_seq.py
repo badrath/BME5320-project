@@ -14,7 +14,7 @@ def find_filtered_matches(input_args):
 
     exit_status = 0; #set to successful unless otherwise changed due to runtime failure
     
-    input_arguments = intput_args; #    0 = file path, 1 = directory to iterate through, 2 directory to output to
+    input_arguments = input_args; #    0 = file path, 1 = directory to iterate through, 2 directory to output to
     
     #this section is essentially hardcoding the paths for project purposes and needs to be revisited to generalize it
     #the file paths are essentially hardcoded here
@@ -54,5 +54,6 @@ def find_filtered_matches(input_args):
     return(returned_accID);
 
 if __name__ == "__main__":
+    print(sys.argv);
     find_filtered_matches(sys.argv);
 
