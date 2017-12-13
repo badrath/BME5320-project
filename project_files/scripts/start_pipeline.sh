@@ -57,7 +57,7 @@ module load python/3.3
 #echo "[INFO] Creating files by running auxillary python script."
 #echo "[INFO] It is assumed that the python file is in the current working directory."
 #split_status=0
-#python split_faa.py $file $num_of_files $num_of_seqs > $split_status #5 seqences into each of the 103 files, it
+#python split_faa.py $file $num_of_files $num_of_seqs > $split_status #5 seqences into each of the 103 files, it also writes a MGG.txt file containing a list of all of the accession numbers of the genes within MGG
 #
 #if (($split_status > 0)); then
 #	exit 1
@@ -80,15 +80,16 @@ echo "[INFO] Will Filter and Name blast results via submit_name_find_array.job o
 hold_blastdbcmd_jid=$(qsub -pe smp 1 -terse -t 1-2:1 submit_name_find_array.job | awk -F. '{print $1}') #	This will filter then run blastdbcmd and save results in seprate files according to the .faa.out files
 
 
+#	as of 12/13 testing blastdbcmd and filtering criteria. The filtering looks like it should work. using -q sandbox for development. On production run, this will need to be changed
+#		trouble with running the filter scripts. work on this tomorrow.
 
 
 
 
-
-##TODO:
+##TODO: might be legacy if above works
 #hold_blastdbcmd_jid=$(qsub -hold_jid $hold_pyFilter_jid filter_split_blastdbcmd_array.job | awk -F. '{print $1}') #This will run the blastdbcmd on all seq files in the data/batch4GO directory. not written
 
-##for GO Terms	INCOMPLETE, TESTING blastdbcmd FIRST!
+##for GO Terms	INCOMPLETE, TESTING blastdbcmd FIRST!...
 ##TODO wait for the blastdbcmd's to finish then amalagmate them
 #qsub -hold_jid $hold_blastdbcmd_jid amalgamateGOTerms.job ##	This will combine the results of the individual sequence runs into 2 files, an Annotated_seq_simple.csv and Annotated_seqes_long.csv. not written
 ##TODO run a qsub to put together the GO Terms results into the final report

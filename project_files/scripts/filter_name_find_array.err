@@ -1,13 +1,40 @@
-/opt/gridengine/default/spool/neon-compute-4-12/job_scripts/3731571: line 27: ./filter_run_blastdbcmd.sh: Permission denied
-/opt/gridengine/default/spool/neon-compute-4-12/job_scripts/3731571: line 27: ./filter_run_blastdbcmd.sh: Permission denied
 mkdir: cannot create directory `../data/GONames': File exists
-  File "filter_split_seq.py", line 52
-    return(returned_accID);
-    ^
-SyntaxError: 'return' outside function
-  File "filter_split_seq.py", line 52
-    return(returned_accID);
-    ^
-SyntaxError: 'return' outside function
-Command line argument error: Argument "entry_batch". File is not accessible:  `../data/faa-split/file1.faa.out.Matches'
-Command line argument error: Argument "entry_batch". File is not accessible:  `../data/faa-split/file2.faa.out.Matches'
+Traceback (most recent call last):
+  File "filter_split_seq.py", line 56, in <module>
+    find_filtered_matches(sys.argv);
+  File "filter_split_seq.py", line 29, in find_filtered_matches
+    print("completion_line from filter_split_seq.py: " + completion_line);
+TypeError: Can't convert 'bytes' object to str implicitly
+Traceback (most recent call last):
+  File "filter_split_seq.py", line 56, in <module>
+    find_filtered_matches(sys.argv);
+  File "filter_split_seq.py", line 29, in find_filtered_matches
+    print("completion_line from filter_split_seq.py: " + completion_line);
+TypeError: Can't convert 'bytes' object to str implicitly
+./filter_run_blastdbcmd.sh: line 20: 'filter_split_seq.py': command not found
+./filter_run_blastdbcmd.sh: line 20: '../data/faa-split/file2.faa.out': No such file or directory
+./filter_run_blastdbcmd.sh: line 20: 'filter_split_seq.py': command not found
+./filter_run_blastdbcmd.sh: line 20: '../data/faa-split/file1.faa.out': No such file or directory
+./filter_run_blastdbcmd.sh: line 20: filename_path: command not found
+./filter_run_blastdbcmd.sh: line 20: filename_path: command not found
+./filter_run_blastdbcmd.sh: line 20: from: command not found
+./filter_run_blastdbcmd.sh: line 20: from: command not found
+./filter_run_blastdbcmd.sh: line 20: filter_split_seq.py:: command not found
+./filter_run_blastdbcmd.sh: line 20: filter_split_seq.py:: command not found
+./filter_run_blastdbcmd.sh: line 20: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file2.faa.out: Permission denied
+./filter_run_blastdbcmd.sh: line 20: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file1.faa.out: Permission denied
+mkdir: cannot create directory `../data/GONames': File exists
+Traceback (most recent call last):
+  File "filter_split_seq.py", line 64, in <module>
+    find_filtered_matches(sys.argv);
+  File "filter_split_seq.py", line 25, in find_filtered_matches
+    with open('MGG.txt',r) as infile: #hardcoded
+NameError: global name 'r' is not defined
+Traceback (most recent call last):
+  File "filter_split_seq.py", line 64, in <module>
+    find_filtered_matches(sys.argv);
+  File "filter_split_seq.py", line 25, in find_filtered_matches
+    with open('MGG.txt',r) as infile: #hardcoded
+NameError: global name 'r' is not defined
+Error: [blastdbcmd] Entry not found in BLAST database
+Error: [blastdbcmd] Entry not found in BLAST database

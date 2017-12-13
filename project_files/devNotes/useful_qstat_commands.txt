@@ -1,0 +1,5 @@
+qstat -q DK 			gives information of activity of the DK queue
+qstat -u rmarini		shows only information of jobs running for the rmarini
+whichq				shows a list of the ques (the logged in user) has access to
+
+-q COE, UI, UI-HM, all.q		qsub option that qsubs to all queues listed, hopefully I can get access to the INFORMATICS queue

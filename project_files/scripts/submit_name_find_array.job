@@ -7,7 +7,7 @@
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu
 #$ -m bes
-#$ -q DK
+#$ -q sandbox #DK, COE, UI, UI-HM, all.q #using sandbox for dev only!
 #$ -pe smp 1 #2
 
 #This file calls the functions to filter and split out the individual sequences of the blast results.

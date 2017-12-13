@@ -7,6 +7,8 @@ exit_status = 0; #set to successful unless otherwise changed due to runtime fail
 
 input_arguments = sys.argv; #0 = file path, #1 = number of files, #2 = number of seqs per file
 
+MGG_file = 'MGG.txt'; #    file to write MGG accession numbers to for later filtering
+
 #    inputs for dev only
 # input_arguments = ["filler","../data/uncompressed_input_file.faa",103,5];
 
@@ -16,6 +18,10 @@ num_seqs = int(input_arguments[3]);
 
 pwd1 = os.getcwd();
 grand_parent_dir = os.path.split(pwd1)[0];
+MGG_path = os.path.join(grand_parent_dir,"scripts",MGG_file); #    path to MGG.txt file for later use in filtering out MGG genes and variants
+MGG_acc_ids = [];
+MGG_seq_len = [];
+seqLen = 0; #init len counter for individual sequences
 buffer = [];
 seqs_num = 0;
 filename_i = 1; #for job submission the file series cannot begin at 0
@@ -24,6 +30,15 @@ with open (faa_path, 'r') as infile:
     for line in infile:
         if('>' in line):
             #beginning of new sequence
+            
+            if(len(MGG_acc_ids) != 0):
+                #append seq length to MGG_seq_len list
+                MGG_seq_len.append(seqLen);
+                seqLen = 0; #reset seqLen
+                
+            #save accession number to MGG_file and MGG_path
+            MGG_acc_ids.append(line.strip('>').split(' ')[0]);
+            
             if(seqs_num == num_seqs):
                 #sequence buffer filled
                 
@@ -43,7 +58,8 @@ with open (faa_path, 'r') as infile:
                 seqs_num = 0; #reset sequence counter of buffer
                 
             seqs_num += 1;
-            
+        else:
+            seqLen += len(line.strip('\n'));   
         buffer.append(line);
     
     # write last set of seqs to new file
@@ -52,8 +68,15 @@ with open (faa_path, 'r') as infile:
     with open(temp_filename, 'w+') as outfile:
         for seq_line in buffer:
             outfile.write(seq_line);
+    
+    MGG_seq_len.append(seqLen); #append last seq length to list
             
     writing_records.append(len(buffer)); #recording information of last file written
+
+#write the MGG accession ids (MGG_acc_ids) to MGG_file at MGG_path
+with open(MGG_path, 'w') as outfile:
+    for i, id in enumerate(MGG_acc_ids):
+        outfile.write(id + ',' + str(MGG_seq_len[i]) + '\n');
 
 #testing to make sure correct information and write was successful
 num_full_records = len(writing_records) - 1;

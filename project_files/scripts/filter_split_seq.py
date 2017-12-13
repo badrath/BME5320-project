@@ -20,6 +20,13 @@ def find_filtered_matches(input_args):
     #the file paths are essentially hardcoded here
     input_file = input_arguments[1].replace('../','');   #hardcoding
     
+    #read in MGG.txt with the MGG accession numbers and sequence length into dictionary. Use this dictionary for filtering
+    MGG = {};
+    with open('MGG.txt',r) as infile: #hardcoded
+        for line in infile:
+            line_split = line.strip('\n').split(',');
+            MGG[line_split[0]] = line_split[1];
+    
     pwd1 = os.getcwd();
     grand_parent_dir = os.path.split(pwd1)[0];
     filename_path = os.path.join(grand_parent_dir,input_file);   #got the paths localized
@@ -40,10 +47,11 @@ def find_filtered_matches(input_args):
                 elif(newSeq):
                     newSet = False;
                     #    actual sequence results here
-                    filter_result = filter(line);   #    filter function underconstruction
+                    filter_result = filter(line, MGG);   #    filter function underconstruction
                     if(filter_result):
-                        #    TODO: run blastdbcmd, format the result, save to a file.
-                        returned_accID.append(filter_result);                      
+                        returned_accID.append(filter_result);
+                        break; #found the 1 result that passed our filters, break loop and run it in blastdbcmd!
+                               
                     
     else:
         #    blast run of the file completed UNsuccessfully. skips this file with an error message.
