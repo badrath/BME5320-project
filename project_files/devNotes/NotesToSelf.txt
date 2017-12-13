@@ -15,3 +15,7 @@ Notes for report:
 
 11/7:
 1) need to rework filter_split_seq.py so that I can call blastdbcmd wiht -outfmt %a -entry '' -target_only -db '<path to ref seq>'
+
+12/13:
+1)	need to debug filter and blastdbcmd but I think the logic is mostly there and correct
+2)	all qsubs are subbing to sandbox queue, this will need to be changed for the production run
