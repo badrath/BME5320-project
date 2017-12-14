@@ -17,10 +17,10 @@ TAB_FORMAT=7 #6 without header, 7 with header and final line for completion vali
 
 E_VALUE=0.001
 
-GI_LIST='MGG.gi'	#	untested for MGG filtering out at BLAST runtime
+#GI_LIST='MGG.gi'	#	untested for MGG filtering out at BLAST runtime
 
-NUM_THREADS=$2	#	experimental
+NUM_THREADS=$2	#	works and improves performance
 
 #$BLASTP -query $QUERY_FILE -out $OUTPUT_FILE -db $DB -num_alignments $NUM_ALIGNMENTS_DESCR -num_descriptions $NUM_ALIGNMENTS_DESCR -outfmt $TAB_FORMAT
 
-$BLASTP -query $QUERY_FILE -out $OUTPUT_FILE -db $DB -max_target_seqs $NUM_ALIGNMENTS_DESCR -outfmt $TAB_FORMAT -evalue $E_VALUE -negative_gilist $GI_LIST -num_threads $NUM_THREADS
+$BLASTP -query $QUERY_FILE -out $OUTPUT_FILE -db $DB -max_target_seqs $NUM_ALIGNMENTS_DESCR -outfmt $TAB_FORMAT -evalue $E_VALUE -num_threads $NUM_THREADS

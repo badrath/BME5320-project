@@ -19,3 +19,9 @@ Notes for report:
 12/13:
 1)	need to debug filter and blastdbcmd but I think the logic is mostly there and correct
 2)	all qsubs are subbing to sandbox queue, this will need to be changed for the production run
+
+12/14:
+1)	sent email with question about filtering to DK and Austin
+2)	filtering and fxnaming works otherwise!
+3)	TODO: amalgamateFxNames.job
+	a) probably do this by using a python script to read through all .fxname and .mqueries files, concatenating them, then pairing (by line), and finally writing them all to a single output file (tab delimitted). 

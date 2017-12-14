@@ -1,28 +1,8 @@
-./filter_run_blastdbcmd.sh ../data/faa-split/file2.faa.out
 ./filter_run_blastdbcmd.sh ../data/faa-split/file1.faa.out
-filter_split 'filter_split_seq.py'
-'filter_split_seq.py'
-filter_split 'filter_split_seq.py'
-'../data/faa-split/file2.faa.out'
-'filter_split_seq.py'
-'../data/faa-split/file1.faa.out'
-filename_path
-filename_path
-from
-from
-filter_split_seq.py:
-filter_split_seq.py:
-/Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file2.faa.out
-/Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file1.faa.out
-Fri Dec  8 21:06:02 CST 2017
-*************************
-Fri Dec  8 21:06:02 CST 2017
-*************************
-./filter_run_blastdbcmd.sh ../data/faa-split/file2.faa.out
-./filter_run_blastdbcmd.sh ../data/faa-split/file1.faa.out
-filter_split 
-filter_split 
-Wed Dec 13 16:28:37 CST 2017
-Wed Dec 13 16:28:37 CST 2017
-*************************
+[DEV]    grand_parent_dir: /Users/rmarini/BME5320/BME5320-project/project_files
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file1.faa.out
+[INFO] data/faa-split/file1.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file1.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file1.faa.out.matches
+Thu Dec 14 14:40:43 CST 2017
 *************************

@@ -7,7 +7,7 @@
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu
 #$ -m bes
-#$ -q sandbox #DK, COE, UI, UI-HM, all.q #using sandbox for dev only!
+#$ -q all.q #,sandbox,DK,COE,UI #DK,COE,UI,all.q #using sandbox for dev only!
 #$ -pe smp 1 #2
 
 #This file calls the functions to filter and split out the individual sequences of the blast results.
@@ -16,7 +16,7 @@
 data_source_dir="../data/faa-split"
 
 #creating directory for output of blastdbcmd
-batch4Names_Dir="../data/GONames"
+batch4Names_Dir="../data/FxNames"
 if [ -d $batch4Names_Dir ]; then
 	rm -rf $batch4Names_Dir #	deletes previous batch4Names directory if it exists, like clearing old data
 fi

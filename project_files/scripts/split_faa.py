@@ -18,7 +18,7 @@ num_seqs = int(input_arguments[3]);
 
 pwd1 = os.getcwd();
 grand_parent_dir = os.path.split(pwd1)[0];
-MGG_path = os.path.join(grand_parent_dir,"scripts",MGG_file); #    path to MGG.txt file for later use in filtering out MGG genes and variants
+MGG_path = os.path.join(grand_parent_dir,"data",MGG_file); #    path to MGG.txt file for later use in filtering out MGG genes and variants
 MGG_acc_ids = [];
 MGG_seq_len = [];
 seqLen = 0; #init len counter for individual sequences
@@ -37,7 +37,7 @@ with open (faa_path, 'r') as infile:
                 seqLen = 0; #reset seqLen
                 
             #save accession number to MGG_file and MGG_path
-            MGG_acc_ids.append(line.strip('>').split(' ')[0]);
+            MGG_acc_ids.append(line.strip('>').split(' ')[0].split('.')[0]);
             
             if(seqs_num == num_seqs):
                 #sequence buffer filled

@@ -1,5 +1,9 @@
 qstat -q DK 			gives information of activity of the DK queue
 qstat -u rmarini		shows only information of jobs running for the rmarini
 whichq				shows a list of the ques (the logged in user) has access to
+qstat -g c			gives queue statistics of all queues. CQLOAD is the load in a queue
 
--q COE, UI, UI-HM, all.q		qsub option that qsubs to all queues listed, hopefully I can get access to the INFORMATICS queue
+-q DK,COE,UI,all.q		qsub option that qsubs to all queues listed, hopefully I can get access to the INFORMATICS queue
+
+good source of information....though it is from another University using an HPC system
+https://hpc.oit.uci.edu/running-jobs

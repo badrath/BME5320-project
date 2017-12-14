@@ -70,28 +70,24 @@ module load python/3.3
 #echo "[INFO] Running blast array job."
 ##hold_blast_jid=$(qsub -pe smp 4 -terse -t 1-$num_of_files:1 submit_blast_array.job | awk -F. '{print $1}')	# runs all files, for full run only
 #hold_blast_jid=$(qsub -pe smp 4 -terse -t 1-2:1 submit_blast_array.job | awk -F. '{print $1}')	# runs only 2 files for dev only, WORKS
+#
+#
+###########################################
+##for blast results, WORKS!
+#echo "[INFO] Will Filter and Name blast results via submit_name_find_array.job once blast array job has completed."
+##hold_blastdbcmd_jid=$(qsub -pe smp 1 -terse -hold_jid $hold_blast_jid -t 1-$num_of_files:1 submit_name_find_array.job | awk -F. '{print $1}') #		runs all files, for full run only
+##hold_blastdbcmd_jid=$(qsub -pe smp 1 -terse -hold_jid $hold_blast_jid -t 1-1:1 submit_name_find_array.job | awk -F. '{print $1}') #	This will filter then run blastdbcmd and save results in seprate files according to the .faa.out files, runs for test of whole start_pipeline.sh
+#hold_blastdbcmd_jid=$(qsub -pe smp 1 -terse -t 1-1:1 submit_name_find_array.job | awk -F. '{print $1}') #	This will filter then run blastdbcmd and save results in seprate files according to the .faa.out files, for section testing only
+#	#	above currently set for n=1 array elements for debugging, on dev test run with atleast n=2
 
 
-#for blast results
-#		Do I need -pe smp 1 in the qsub?
-echo "[INFO] Will Filter and Name blast results via submit_name_find_array.job once blast array job has completed."
-#hold_blastdbcmd_jid=$(qsub -pe smp 1 -terse -hold_jid $hold_blast_jid -t 1-$num_of_files:1 submit_name_find_array.job | awk -F. '{print $1}') #		runs all files, for full run only
-#hold_blastdbcmd_jid=$(qsub -pe smp 1 -terse -hold_jid $hold_blast_jid -t 1-2:1 submit_name_find_array.job | awk -F. '{print $1}') #	This will filter then run blastdbcmd and save results in seprate files according to the .faa.out files
-hold_blastdbcmd_jid=$(qsub -pe smp 1 -terse -t 1-2:1 submit_name_find_array.job | awk -F. '{print $1}') #	This will filter then run blastdbcmd and save results in seprate files according to the .faa.out files
+########################################
 
 
-#	as of 12/13 testing blastdbcmd and filtering criteria. The filtering looks like it should work. using -q sandbox for development. On production run, this will need to be changed
-#		trouble with running the filter scripts. work on this tomorrow.
-
-
-
-
-##TODO: might be legacy if above works
-#hold_blastdbcmd_jid=$(qsub -hold_jid $hold_pyFilter_jid filter_split_blastdbcmd_array.job | awk -F. '{print $1}') #This will run the blastdbcmd on all seq files in the data/batch4GO directory. not written
 
 ##for GO Terms	INCOMPLETE, TESTING blastdbcmd FIRST!...
 ##TODO wait for the blastdbcmd's to finish then amalagmate them
-#qsub -hold_jid $hold_blastdbcmd_jid amalgamateGOTerms.job ##	This will combine the results of the individual sequence runs into 2 files, an Annotated_seq_simple.csv and Annotated_seqes_long.csv. not written
+#qsub -hold_jid $hold_blastdbcmd_jid amalgamateFxNames.job ##	This will combine the results of the individual sequence runs into 2 files, an Annotated_seq_simple.csv and Annotated_seqes_long.csv. not written
 ##TODO run a qsub to put together the GO Terms results into the final report
 ##TODO 	filter for unique GO Terms for each query sequence
 
