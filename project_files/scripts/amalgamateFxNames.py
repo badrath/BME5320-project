@@ -69,7 +69,7 @@ def amalgamate():
         for line in infile:
             line_split = line.strip('\n').split(',');
             MGG.append(line_split[0]);
-    miss_annote_path = os.path.join(grand_parent_dir,'data','proteins_filtered_out.txt');
+    miss_annote_path = os.path.join(grand_parent_dir,'data','filtered_out_queries.txt');
     with open(miss_annote_path, 'w') as miss_outfile:
         for gene in MGG:
             in_mquery = False;
@@ -82,7 +82,7 @@ def amalgamate():
                 in_mquery = False;
     
     #concatenate the 3 lists' contents into single tab delim file
-    with open(os.path.join(grand_parent_dir,'data','proteome_annotated.txt'), 'w') as outfile:
+    with open(os.path.join(grand_parent_dir,'data','proteome_fx_annotations.txt'), 'w') as outfile:
         outfile.write('MGG Query' + '\t' + 'Matched Targets' + '\t' + 'Functional Names' + '\n');   #    header row
         for i, fxname in enumerate(fxnames):
             outfile.write(mqueries[i] + '\t' + matches[i] + '\t' + fxnames[i] + '\n');
