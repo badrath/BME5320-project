@@ -24,7 +24,7 @@ def find_filtered_matches(input_args):
     
     pwd1 = os.getcwd();
     grand_parent_dir = os.path.split(pwd1)[0];
-    sys.stdout.write('[DEV]    grand_parent_dir: ' + grand_parent_dir + '\n');
+#     sys.stdout.write('[DEV]    grand_parent_dir: ' + grand_parent_dir + '\n');
     input_file_path = os.path.join(grand_parent_dir, input_file);   #got the paths localized
     match_file_path = os.path.join(grand_parent_dir, match_file);    #got the paths localized
     matched_query_file_path = os.path.join(grand_parent_dir, matched_query_file);    #got the paths localized

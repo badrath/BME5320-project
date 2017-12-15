@@ -7,7 +7,7 @@
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu
 #$ -m bes
-#$ -q all.q #DK,COE,UI,all.q #using sandbox queue for dev only!
+#$ -q all.q,COE,UI #DK,COE,UI,all.q #using sandbox queue for dev only!
 #$ -pe smp 4 #2
 
 NUM_CORES=4

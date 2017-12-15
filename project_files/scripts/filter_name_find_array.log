@@ -1,8 +1,0 @@
-./filter_run_blastdbcmd.sh ../data/faa-split/file1.faa.out
-[DEV]    grand_parent_dir: /Users/rmarini/BME5320/BME5320-project/project_files
-[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file1.faa.out
-[INFO] data/faa-split/file1.faa.outcompleted BLASTP as expected.
-[INFO]		filter_split of ../data/faa-split/file1.faa.out complete
-[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file1.faa.out.matches
-Thu Dec 14 14:40:43 CST 2017
-*************************

@@ -2,10 +2,16 @@
 ##
 #$ -S /bin/bash
 #$ -cwd
-#$ -N filter_name_find_array
+#$ -N amalgamate
 #$ -o $JOB_NAME.log
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu
 #$ -m bes
-#$ -q all.q #,sandbox,DK,COE,UI #DK,COE,UI,all.q #using sandbox for dev only!
+#$ -q all.q,COE,UI #,sandbox,DK,COE,UI #DK,COE,UI,all.q #using sandbox for dev only!
 #$ -pe smp 1 #2
+
+echo "[INFO]	qsubbing amalgamation job"
+
+python amalgamateFxNames.py	#	read through all .fxname and .mqueries files, concatenating them, then pairing (by line), and finally writing them all to a single output file (tab delimitted).
+
+echo "[INFO]	anotation of proteome complete! Results in concatenated file in /BME5320-project/project_files/data/"
