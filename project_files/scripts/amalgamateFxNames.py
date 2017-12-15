@@ -69,11 +69,17 @@ def amalgamate():
         for line in infile:
             line_split = line.strip('\n').split(',');
             MGG.append(line_split[0]);
-    miss_annote_path = os.path.join(grand_parent_dir,'data','proteome_missed.txt');
+    miss_annote_path = os.path.join(grand_parent_dir,'data','proteins_filtered_out.txt');
     with open(miss_annote_path, 'w') as miss_outfile:
         for gene in MGG:
-            if( gene not in mqueries ):
+            in_mquery = False;
+            for mquery in mqueries:
+                if ( gene in mquery ):
+                    in_mquery = True;
+                    break;
+            if( not in_mquery ):
                 miss_outfile.write(gene + "\n");
+                in_mquery = False;
     
     #concatenate the 3 lists' contents into single tab delim file
     with open(os.path.join(grand_parent_dir,'data','proteome_annotated.txt'), 'w') as outfile:
