@@ -12,7 +12,7 @@ DBTYPE='prot'
 BATCH_FILE=$1
 #QUERY=$1
 
-OUTPUT_FILE=$2 #	suspect and untested
+OUTPUT_FILE=$2 
 
 OUTPUT_FORMAT="%t" #%a gives accession, %t gives sequence title 
 

@@ -1,0 +1,239 @@
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file3.faa
+
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file77.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file81.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file103.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file102.faa
+mmands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file16.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file17.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file35.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file8.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file9.faa
+
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file46.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file45.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file32.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file19.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file22.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file34.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file40.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file50.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file49.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file65.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file58.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file55.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file83.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file66.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file86.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file60.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file74.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file59.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file101.faacommands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file90.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file75.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file98.faa
+commands=./run_blast.sh ../data/faa-split/file$SGE_TASK_ID.faa ../data/faa-split/file82.faa
+****************
+Thu Dec 14 21:16:57 CST 2017
+****************
+Thu Dec 14 21:17:04 CST 2017
+****************
+Thu Dec 14 21:17:08 CST 2017
+****************
+Thu Dec 14 21:17:10 CST 2017
+****************
+Thu Dec 14 21:17:31 CST 2017
+****************
+Thu Dec 14 21:17:33 CST 2017
+****************
+Thu Dec 14 21:17:36 CST 2017
+****************
+Thu Dec 14 21:17:37 CST 2017
+****************
+Thu Dec 14 21:17:38 CST 2017
+****************
+Thu Dec 14 21:17:43 CST 2017
+****************
+Thu Dec 14 21:17:44 CST 2017
+****************
+Thu Dec 14 21:17:44 CST 2017
+****************
+Thu Dec 14 21:17:57 CST 2017
+****************
+Thu Dec 14 21:18:09 CST 2017
+****************
+Thu Dec 14 21:18:11 CST 2017
+****************
+Thu Dec 14 21:18:15 CST 2017
+****************
+Thu Dec 14 21:18:18 CST 2017
+****************
+Thu Dec 14 21:18:21 CST 2017
+****************
+Thu Dec 14 21:18:23 CST 2017
+****************
+Thu Dec 14 21:18:27 CST 2017
+****************
+Thu Dec 14 21:18:32 CST 2017
+****************
+Thu Dec 14 21:18:51 CST 2017
+****************
+Thu Dec 14 21:18:51 CST 2017
+****************
+Thu Dec 14 21:18:59 CST 2017
+****************
+Thu Dec 14 21:19:00 CST 2017
+****************
+Thu Dec 14 21:19:02 CST 2017
+****************
+Thu Dec 14 21:19:05 CST 2017
+****************
+Thu Dec 14 21:19:17 CST 2017
+****************
+Thu Dec 14 21:19:24 CST 2017
+****************
+Thu Dec 14 21:19:27 CST 2017
+Thu Dec 14 21:19:27 CST 2017
+****************
+Thu Dec 14 21:19:28 CST 2017
+****************
+Thu Dec 14 21:19:34 CST 2017
+****************
+Thu Dec 14 21:19:35 CST 2017
+****************
+Thu Dec 14 21:19:38 CST 2017
+****************
+Thu Dec 14 21:19:42 CST 2017
+****************
+Thu Dec 14 21:19:42 CST 2017
+****************
+Thu Dec 14 21:19:49 CST 2017
+****************
+Thu Dec 14 21:19:49 CST 2017
+****************
+Thu Dec 14 21:19:49 CST 2017
+****************
+Thu Dec 14 21:19:51 CST 2017
+****************
+Thu Dec 14 21:20:03 CST 2017
+****************
+Thu Dec 14 21:20:03 CST 2017
+****************
+Thu Dec 14 21:20:04 CST 2017
+****************
+Thu Dec 14 21:20:06 CST 2017
+****************
+Thu Dec 14 21:20:08 CST 2017
+****************
+Thu Dec 14 21:20:08 CST 2017
+****************
+Thu Dec 14 21:20:09 CST 2017
+****************
+Thu Dec 14 21:20:14 CST 2017
+****************
+Thu Dec 14 21:20:16 CST 2017
+****************
+Thu Dec 14 21:20:19 CST 2017
+****************
+Thu Dec 14 21:20:26 CST 2017
+****************
+Thu Dec 14 21:20:32 CST 2017
+****************
+Thu Dec 14 21:20:34 CST 2017
+****************
+Thu Dec 14 21:20:36 CST 2017
+****************
+Thu Dec 14 21:20:41 CST 2017
+****************
+Thu Dec 14 21:20:45 CST 2017
+****************
+Thu Dec 14 21:20:54 CST 2017
+****************
+Thu Dec 14 21:20:58 CST 2017
+****************
+Thu Dec 14 21:21:05 CST 2017
+****************
+Thu Dec 14 21:21:06 CST 2017
+****************
+Thu Dec 14 21:21:17 CST 2017
+****************
+Thu Dec 14 21:21:18 CST 2017
+****************
+Thu Dec 14 21:21:25 CST 2017
+****************
+Thu Dec 14 21:21:26 CST 2017
+****************
+Thu Dec 14 21:21:42 CST 2017
+****************
+Thu Dec 14 21:21:45 CST 2017
+****************
+Thu Dec 14 21:21:46 CST 2017
+****************
+Thu Dec 14 21:21:53 CST 2017
+****************
+Thu Dec 14 21:21:56 CST 2017
+****************
+Thu Dec 14 21:21:56 CST 2017
+****************
+Thu Dec 14 21:22:02 CST 2017
+****************
+Thu Dec 14 21:22:05 CST 2017
+****************
+Thu Dec 14 21:22:10 CST 2017
+****************
+Thu Dec 14 21:22:10 CST 2017
+****************
+Thu Dec 14 21:22:11 CST 2017
+****************
+Thu Dec 14 21:22:28 CST 2017
+****************
+Thu Dec 14 21:22:42 CST 2017
+****************
+Thu Dec 14 21:22:42 CST 2017
+****************
+Thu Dec 14 21:22:48 CST 2017
+****************
+Thu Dec 14 21:22:55 CST 2017
+****************
+Thu Dec 14 21:22:56 CST 2017
+****************
+Thu Dec 14 21:23:18 CST 2017
+****************
+Thu Dec 14 21:23:29 CST 2017
+****************
+Thu Dec 14 21:23:30 CST 2017
+****************
+Thu Dec 14 21:23:30 CST 2017
+****************
+Thu Dec 14 21:23:30 CST 2017
+****************
+Thu Dec 14 21:23:42 CST 2017
+****************
+Thu Dec 14 21:23:44 CST 2017
+****************
+Thu Dec 14 21:23:47 CST 2017
+****************
+Thu Dec 14 21:23:57 CST 2017
+****************
+Thu Dec 14 21:24:10 CST 2017
+****************
+Thu Dec 14 21:24:25 CST 2017
+****************
+Thu Dec 14 21:24:29 CST 2017
+****************
+Thu Dec 14 21:24:32 CST 2017
+****************
+Thu Dec 14 21:25:09 CST 2017
+****************
+Thu Dec 14 21:25:11 CST 2017
+****************
+Thu Dec 14 21:25:44 CST 2017
+****************
+Thu Dec 14 21:26:28 CST 2017
+****************
+Thu Dec 14 21:27:48 CST 2017
+****************
+Thu Dec 14 21:28:06 CST 2017
+****************
+Thu Dec 14 21:28:07 CST 2017
+****************
+Thu Dec 14 21:31:15 CST 2017

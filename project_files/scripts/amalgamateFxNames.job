@@ -7,11 +7,13 @@
 #$ -e $JOB_NAME.err
 #$ -M robert-marini@uiowa.edu
 #$ -m bes
-#$ -q all.q,COE,UI,DK #,sandbox,DK,COE,UI #DK,COE,UI,all.q #using sandbox for dev only!
+#$ -q all.q,COE,UI,DK,INFORMATICS #,sandbox,DK,COE,UI #DK,COE,UI,all.q #using sandbox for dev only!
 #$ -pe smp 1 #2
+
+sleep 10 #testing this out to see if it helps handle a jumbling issue with the data concatenation
 
 echo "[INFO]	qsubbing amalgamation job"
 
 python amalgamateFxNames.py	#	read through all .fxname and .mqueries files, concatenating them, then pairing (by line), and finally writing them all to a single output file (tab delimitted).
 
-echo "[INFO]	anotation of proteome complete! Results in concatenated file in /BME5320-project/project_files/data/"
+echo "[INFO]	anotation of proteome complete! Results in concatenated file in ./BME5320-project/project_files/data/"

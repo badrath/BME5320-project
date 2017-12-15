@@ -15,12 +15,12 @@
 
 data_source_dir="../data/faa-split"
 
-#creating directory for output of blastdbcmd
-batch4Names_Dir="../data/FxNames"
-if [ -d $batch4Names_Dir ]; then
-	rm -rf $batch4Names_Dir #	deletes previous batch4Names directory if it exists, like clearing old data
-fi
-mkdir $batch4Names_Dir
+##creating directory for output of blastdbcmd
+#batch4Names_Dir="../data/FxNames"
+#if [ ! -d $batch4Names_Dir ]; then
+#	rm -rf $batch4Names_Dir #	deletes previous batch4Names directory if it exists, like clearing old data
+#fi
+#mkdir $batch4Names_Dir
 
 CMD='./filter_run_blastdbcmd.sh ../data/faa-split/file$SGE_TASK_ID.faa.out'
 echo "./filter_run_blastdbcmd.sh ../data/faa-split/file$SGE_TASK_ID.faa.out"

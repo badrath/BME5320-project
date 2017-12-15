@@ -19,33 +19,71 @@ def amalgamate():
     
     for(dirpath, dirnames, filenames) in os.walk(faa_split_path):
         for filename in filenames:
-            if('.fxname' in filename):
-#                 print('append contents to fxnames');
-                with open(os.path.join(faa_split_path,filename), 'r') as infile:
+            if(('.faa.out' in filename) and ('.fxname' not in filename) and ('.matches' not in filename) and ('.mqueries' not in filename)):
+                #3 at a time!
+                fxname_path = os.path.join(faa_split_path,filename + '.fxname');
+                match_path = os.path.join(faa_split_path,filename + '.matches');
+                mquery_path = os.path.join(faa_split_path,filename + '.mqueries');
+                with open(fxname_path, 'r') as infile:
                     for line in infile:
                         line_strip = line.strip('\n');
                         if(line_strip):
                             fxnames.append(line_strip);
-            elif('.matches' in filename):
-#                 print('append contents to matches');
-                with open(os.path.join(faa_split_path,filename), 'r') as infile:
+                with open(match_path, 'r') as infile:
                     for line in infile:
                         line_strip = line.strip('\n');
                         if(line_strip):
                             matches.append(line_strip);
-            elif('.mqueries' in filename):
-#                 print('append contents to matches');
-                with open(os.path.join(faa_split_path,filename), 'r') as infile:
+                with open(mquery_path, 'r') as infile:
                     for line in infile:
                         line_strip = line.strip('\n');
                         if(line_strip):
                             mqueries.append(line_strip);
+                            
+#             if('.fxname' in filename):
+# #                 print('append contents to fxnames');
+#                 with open(os.path.join(faa_split_path,filename), 'r') as infile:
+#                     for line in infile:
+#                         line_strip = line.strip('\n');
+#                         if(line_strip):
+#                             fxnames.append(line_strip);
+#             elif('.matches' in filename):
+# #                 print('append contents to matches');
+#                 with open(os.path.join(faa_split_path,filename), 'r') as infile:
+#                     for line in infile:
+#                         line_strip = line.strip('\n');
+#                         if(line_strip):
+#                             matches.append(line_strip);
+#             elif('.mqueries' in filename):
+# #                 print('append contents to mqueries');
+#                 with open(os.path.join(faa_split_path,filename), 'r') as infile:
+#                     for line in infile:
+#                         line_strip = line.strip('\n');
+#                         if(line_strip):
+#                             mqueries.append(line_strip);
+    
+    #check for missing (possibly filtered out) MGG queries (and therefore no fx names)
+    MGG = [];
+    MGG_path = os.path.join(grand_parent_dir, 'data', 'MGG.txt');
+    with open(MGG_path,'r') as infile: #hardcoded
+        for line in infile:
+            line_split = line.strip('\n').split(',');
+            MGG.append(line_split[0]);
+    miss_annote_path = os.path.join(grand_parent_dir,'data','proteome_missed.txt');
+    with open(miss_annote_path, 'w') as miss_outfile:
+        for gene in MGG:
+            if( gene not in mqueries ):
+                miss_outfile.write(gene + "\n");
     
     #concatenate the 3 lists' contents into single tab delim file
     with open(os.path.join(grand_parent_dir,'data','proteome_annotated.txt'), 'w') as outfile:
         outfile.write('MGG Query' + '\t' + 'Matched Targets' + '\t' + 'Functional Names' + '\n');   #    header row
         for i, fxname in enumerate(fxnames):
-            outfile.write(mqueries[i] + '\t' + matches[i] + '\t' + fxname + '\n');
+            outfile.write(mqueries[i] + '\t' + matches[i] + '\t' + fxnames[i] + '\n');
+        if(len(matches) == len(mqueries) and len(matches) == len(fxnames) and len(mqueries) == len(fxnames)):
+            outfile.write("#    Function annotation completed successfully. Number of annotations: " + str(len(matches)));
+        else:
+            outfile.write("#    Function annotation completed unsuccessfully. Unequal number of queries, matched targets, and functional names: " + ",".join([str(len(mqueries)),str(len(matches)),str(len(fxnames))]));
     
     return(exit_code);
 

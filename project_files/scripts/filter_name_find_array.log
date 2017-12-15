@@ -1,0 +1,372 @@
+./filter_run_blastdbcmd.sh ../data/faa-split/file8.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file9.faa.out
+t
+t
+filter_run_blastdbcmd.sh ../data/faa-split/file38.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file37.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file23.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file22.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file10.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file12.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file40.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file27.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file42.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file26.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file52.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file28.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file41.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file55.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file56.faa.out
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/fil./filter_run_blastdbcmd.sh ../data/faa-split/file58.faa.out
+TP as expected.
+./filter_run_blastdbcmd.sh ../data/faa-split/file29.faa.out
+[INFO]		filter_split of ../data/faa-split/file4.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file4.faa.out.matches
+data/faa-split/file1.faa.out
+[INFO] data/faa-split/file1.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file1.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file1.faa.out.matches
+aa.outcompleted BLASTP as expected.
+./filter_run_blastdbcmd.sh ../data/faa-split/file59.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file85.faa.out
+[INFO]		filter_split of ../data/faa-split/file16.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file16.faa.out.matches
+.outcompleted BLASTP as expected.
+./filter_run_blastdbcmd.sh ../data/faa-split/file86.faa.out
+[INFO]		filter_split of ../data/faa-split/file18.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file18.faa.out.matches
+.outcompleted BLASTP as expected.
+./filter_run_blastdbcmd.sh ../data/faa-split/file46.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file74.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file88.faa.out
+plete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file36.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmar./filter_run_blastdbcmd.sh ../data/faa-split/file62.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file64.faa.out
+ASTP as expected.
+ data/faa-split/file22.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file68.faa.out
+[INFO] data/faa-split/file68.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file37.faa.out complete
+E5320/BME5320-project/project_files/data/faa-split/file3.faa.out
+[INFO] data/faa-split/file3.faa.outcompleted BLASTP as expected.
+./filter_run_blastdbcmd.sh ../data/faa-split/file30.faa.out
+[INFO]		filter_split of ../data/faa-split/file3.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file3.faa.out.matches
+aa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file23.faa.out
+[INFO] data/faa-split/file23.faa.outcompleted BLASTP as expected.
+./filter_run_blastdbcmd.sh ../data/faa-split/file47.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file92.faa.out
+./filter_run_blastdbcmd.sh ../data/faa-split/file93.faa.out
+e70.faa.out
+[INFO] data/faa-split/file70.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file20.faa.out complete
+[INFO]		filter_split of ../data/faa-split/file23.faa.out complete
+[INFO] data/faa-split/file39.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_fi[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file23.faa.out.matches
+ta[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file26.faa.out
+[INFO] data/faa-split/file26.faa.outcompleted BLASTP as expected.
+./filter_run_blastdbcmd.sh ../data/faa-split/file34.faa.out
+ini/BME5320/BME5320-project/project_files/data/faa-split/file41.faa.out
+[INFO] data/faa-split/file41.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file43.faa.out
+[INFO] data/faa-split/file43.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file40.faa.out com./filter_run_blastdbcmd.sh ../data/faa-split/file66.faa.out
+[INFO]		filter_split of ../data/faa-split/file44.faa.out complete
+./filter_run_blastdbcmd.sh ../data/faa./filter_run_blastdbcm[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file84.faa.out
+[INFO] data/faa-split/file84.faa.outcompleted BLASTP as expected.
+ch, for all matches in ../data/faa-split/file44.faa.out.matches
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file39.faa.out.matches
+./filter_run_blastdbcmd.sh ../data/faa-split/file67.faa.out
+plete
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file42.faa.out
+[INFO] data/faa-split/file42.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file24.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file24.faa.out.matches
+.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file85.faa.out
+[INFO] data/faa-split/file85.faa[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file25.faa.out
+[INFO] data/faa-split/file25.faa.outcompleted BLASTP as expected.
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/f./filter_run_blastdbcmd.sh ../data/faa-split/file101.faa.out
+ata/faa-split/file71.faa.out.matches
+.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file5.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file5.faa.out.matches
+aa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_fiThu Dec 14 21:32:04 CST 2017
+.out
+[INFO] data/faa-split/file75.faa.outcompleted BLASTP as expected.
+_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file27.faa.out
+[INFO] input_file_path fro[INFO] input_file_path from filter_split[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file29.faa.out
+[INFO] data/faa-split/file29.faa.outcompleted BLASTP as expected.
+*******************
+tdbcmd, in batch, for all matches ./filter_run_blastdbcmd.sh ../data/faa-splitThu Dec 14 21:32[INFO] input_file_path from filter_split_seq[INFO] input_file_path from filter_split_seq.py: /Users/rmar[INFO]		filter_split of ../data/faa-split/file28.faa.out com[INFO]		filter_split of ../data/faa-split/file45.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file45.faa.out.matches
+er_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_fi[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file88.faa.out.matches
+.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file73.faa.out
+[INFO] data/faa-split/file73.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file27.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file31.faa.out
+[INFO] data/faa-split/file31.faa.outcompleted BLASTP as expected.
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file46.faa.out.matches
+[INFO]		filter_split of ../data/faa-split/file73.faa.out com[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file89.faa.out
+[INFO] data/faa-split/file89.faa.outcompleted BLASTP as expected.
+s/data/faa-split/file47.faa.out
+[INFO] data/faa-split/file47.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file92.faa.out
+[INFO] data/faa-split/file92.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file89.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file89.faa.out.matches
+Thu Dec 14 21:32:04 CST 2017
+[INFO] input_file_path fro[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file48.faa.out
+[INFO]./filter_run_blastdbcmd.sh ../da[INFO]		filter_split of ../data/faa-split/file6.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file6.faa.out.matches
+NFO] data/faa-split/file74.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file90.faa.out
+[INFO] data/faa-split/file90.faa.outcompleted BLASTP as expected.
+a-split/file74.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file74.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/fil[INFO] input_file_path from f[INFO]		filter_split of ../data/faa-split/file90.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file90.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file91.faa.out
+[INFO] data/faa-split/file91.faa.outcompleted BLASTP as expected.
+ted.
+[INFO]		filter_split of ../data/faa-split/file52.faa.out complete
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file78.faa.out
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/f[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file77.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file54.faa.out
+[INFO] data/faa-split/file54.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ..*************************
+.out complete
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file53.faa.out
+[INFO] data/faa-split/file53.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file60.faa.out
+[INFO] data/faa-split/file60.faa[INFO]		filter_split of ../data/faa-split/file91.faa.out complete
+aa-split/file79.faa.out.matches
+[INFO]		filter_split of ../data/faa-split/file30.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file30.faa.out.matches
+E5320/BME5320-project/project_files/data/faa-split/file80.faa.out
+[INFO] data/faa-split/file80.faa.outcompleted BLASTP as expected.
+le49.faa.out.matches
+pected.
+[INFO]		filter_split of ../data/faa-split/file54.faa.out complete
+[INFO]		filter_split of ../data/faa-split/file59.faa.out complete
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file57.faa.out
+[INFO] data/faa-split/file57.faa.outcompleted BLASTP as expected.
+aa-split/file91.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file96.faa.out
+[INFO] data/faa-split/file96.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file93.faa.out complete
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file98.faa.out
+[INFO] data/faa-split/file98.faa.outcompleted BLASTP as expected.
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file93.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file82.faa.out
+[INFO] data/faa-split/file82.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file80.faa.out complete
+aa-split/file54.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file62.faa.out
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BM[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file64.faa.out
+[INFO] data/faa-split/file64.faa.outcompleted BLASTP as expected.
+NFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file98.faa.out.matches
+[INFO]		filter_split of ../data/faa-split/file95.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file95.faa.out.matches
+.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file66.faa.out
+[INFO] data/faa-split/file66.faa[INFO]		filter_split of ../data/fa[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file65.faa.ou[INFO]		filter_split of ../data/faa-split/file83.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file83.faa.out.matches
+a/faa-split/file53.faa.out complete
+Thu Dec 14 21:32:04 CST 2017
+ilter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file67.faa.out
+[INFO] data/faa-split/file67.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file99.faa.out
+[INFO] data/faa-split/file99.faa.outcompleted BLASTP as expected.
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file60.faa.out.matches
+[INFO]		filter_split of ../data/faa-split/file99.faa.out complete
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file51.faa.out
+[INFO] data/faa-split/file51.faa.outcompleted BLASTP as expected.
+s/data/faa-split/file97.faa.out
+[INFO] data/faa-split/file97.faa.outcompleted BLASTP as expected.
+a-split/file63.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file62.faa.out.matches
+[INFO]		filter_split of ../data/faa-split/file57.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file64.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_fi[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BM[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file65.faa.out.matches
+.outcompleted BLASTP as expected.
+files/data/faa-split/file102.faa.out
+[INFO] data/faa-split/file102.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file101.faa.out
+[INFO] data/faa-split/file101.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file97.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file97.faa.out.matches
+[INFO] input_file_path from filt[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file67.faa.out.matches
+t
+[INFO] data/faa-split/file13.faa.outcompleted BLASTP as expected.
+in batch, for all matches in ../data/faa-split/file103.faa.out.matches
+[INFO]		filter_split of ../data/faa-split/file51.faa.out complete
+[INFO]		running blastdbcmd, in ba[INFO]		filter_split of ../data/faa-split/file100.faa.out complete
+Thu Dec 14 21:32:04 CST 2017
+ta/faa-split/file101.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file100.faa.out.matches
+[INFO]		filter_split of ../data/faa-split/file13.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file13.faa.out.matches
+ject/project_files/data/faa-split/file50.faa.out
+[INFO] data/faa-split/file50.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file50.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file50.faa.out.matches
+Thu Dec 14 21:32:04 CST 2017
+*************************
+./filter_run_blastdbcmd.sh ../data/faa-split/file11.faa.out
+ec 14 21:32:04 CST 2017
+*************************
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file10.faa.out
+[INFO] data/faa-split/file10.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file10.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file10.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file11.faa.out
+[INFO] data/faa-split/file11.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file11.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file11.faa.out.matches
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-project/project_files/data/faa-split/file12.faa.out
+[INFO] data/faa-split/file12.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file12.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file12.faa.out.matches
+
+[INFO] input_file_path from filter_split_seq.py: /UsersThu Dec 14 21:32:05 CST 2017
+ect/project_files/data/faa-split/file9.faa.out
+[INFO] data/faa-split/file9.faa.outcompleted BLASTP as expected.
+[INFO] input_file_path from filter_split_seq.py: /Users/rmarini/BME5320/BME5320-proj*************************
+-split/file8.faa.out
+[INFO] data/faa-split/file8.faa.outcompleted BLASTP as expected.
+[INFO]		filter_split of ../data/faa-split/file9.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file9.faa.out.matches
+[INFO]		filter_split of ../data/faa-split/file8.faa.out complete
+[INFO]		running blastdbcmd, in batch, for all matches in ../data/faa-split/file8.faa.out.matches
+17
+Thu Dec 14 21:32:05 CST 2017
+*************************
+*************************
+Thu Dec 14 21:32:05 CST 2017
+ Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+ Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+Thu Dec 14 21:32:05 CST 2017
+*************************
+*************************
+17
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+*************************
+Thu Dec 14 21:32:05 CST 2017
+Thu Dec 14 21:32:05 CST 2017
+*************************
+*************************
+Thu Dec 14 21:32:05 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:06 CST 2017
+*************************
+Thu Dec 14 21:32:07 CST 2017
+*************************
+Thu Dec 14 21:32:07 CST 2017
+*************************
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+*************************
+Thu Dec 14 21:32:07 CST 2017
+*************************
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+*************************
+*************************
+*************************
+*************************
+*************************
+*************************
+*************************
+Thu Dec 14 21:32:07 CST 2017
+*************************
+*************************
+*************************
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+Thu Dec 14 21:32:07 CST 2017
+*************************
+*************************
+*************************
+Thu Dec 14 21:32:07 CST 2017
+*************************
+Thu Dec 14 21:32:08 CST 2017
+Thu Dec 14 21:32:08 CST 2017
+*************************
+*************************
+Thu Dec 14 21:32:08 CST 2017
+Thu Dec 14 21:32:08 CST 2017
+*************************
+*************************
+Thu Dec 14 21:32:08 CST 2017
+*************************
