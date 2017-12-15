@@ -5,8 +5,8 @@
 #$ -N blast_array
 #$ -o $JOB_NAME.log
 #$ -e $JOB_NAME.err
-#$ -M robert-marini@uiowa.edu
-#$ -m bes
+##$ -M robert-marini@uiowa.edu
+##$ -m bes
 #$ -q all.q,COE,UI,DK,INFORMATICS #DK,COE,UI #using sandbox queue for dev only!
 #$ -pe smp 4 #2
 

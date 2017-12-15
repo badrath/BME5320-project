@@ -25,3 +25,14 @@ Notes for report:
 2)	filtering and fxnaming works otherwise!
 3)	TODO: amalgamateFxNames.job
 	a) probably do this by using a python script to read through all .fxname and .mqueries files, concatenating them, then pairing (by line), and finally writing them all to a single output file (tab delimitted). 
+	
+12/15:
+1) rerun full production run
+
+2) need to generate the flow charts into pngs and place them appropriately onto the github wiki
+
+3) need to write a small discussions section?
+
+4) need to remove the email notifications for submission. 
+
+5) write a how-to-run page to github wiki
